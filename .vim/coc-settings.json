@@ -1,0 +1,29 @@
+{
+  "tsserver.npm": "/Users/eddielaw/.nvm/versions/node/v12.9.1/bin/npm          ",
+  "coc.preferences.diagnostic.displayByAle": true,
+  "coc.preferences.diagnostic.enable": false,
+  "javascript": {
+    "validate.enable": false,
+    "format": {
+      "insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true
+    }
+  },
+  "languageserver": {
+    "dockerfile": {
+      "command": "docker-langserver",
+      "filetypes": ["dockerfile"],
+      "args": ["--stdio"]
+    },
+    "clojure-lsp": {
+      "command": "bash",
+      "args": ["-c", "clojure-lsp"],
+      "filetypes": ["clojure"],
+      "rootPatterns": ["project.clj"],
+      "additionalSchemes": ["jar", "zipfile"],
+      "trace.server": "verbose",
+      "initializationOptions": {
+      }
+    }
+
+  }
+}
